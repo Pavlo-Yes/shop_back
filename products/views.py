@@ -27,7 +27,6 @@ class ProductsRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated, IsAdminUser]
     serializer_class = ProductSerializer
     queryset = ProductModel.objects.all()
-    print(queryset)
 
 #     # Дістаємо продукти певного юзера
 #     def get_queryset(self):
