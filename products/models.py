@@ -4,6 +4,9 @@ from user.models import UserModel
 
 
 class ProductModel(models.Model):
+    class Meta:
+        db_table = 'products_productmodel'
+
     title = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=500)
     price = models.PositiveSmallIntegerField()
